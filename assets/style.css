@@ -1,0 +1,34 @@
+.text-body-secondary {
+    text-align: right;
+    font-size: 2em;
+    color: chartreuse;
+}
+
+.card-body {
+    background-image: url('./photos/Superwideforest.jpg');
+    background-size: cover;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+
+
+.header-text-overlay {
+text-align: left;
+}
+
+.card-img {
+    width: 100%;
+    height: 550px;
+    
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    flex:content;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    
+   
+}
