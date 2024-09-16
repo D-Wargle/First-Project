@@ -63,3 +63,8 @@ text-align: left;
    justify-content: start;
    display: flex;
 }
+
+#carouselExampleCaptions {
+    
+    width: 70%;
+}
