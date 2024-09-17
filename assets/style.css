@@ -67,17 +67,17 @@
 
 #carouselExampleCaptionsEasy {
 
-    width: 70%;
+    width: 100%;
 }
 
 #carouselExampleCaptionsMod {
 
-    width: 70%;
+    width: 100%;
 }
 
 #carouselExampleCaptions {
 
-    width: 70%;
+    width: 100%;
 }
 
 .headerAll {
@@ -97,17 +97,17 @@
 
 #Aside-El {
     text-align: center;
-    flex-basis: 66%;
-  gap: 500px;
-;
+    flex-basis: 100%;
+   flex-direction: flex-start;
+  
 }
 
 #flex-box-split {
-    
+    gap: 100px;
     display: flex;
-    ;
-    align-items: center;
+    align-items: flex-start;
     background-color: rgba(197, 195, 81, 0.5);
+   
 }
 
 .card-2 {
@@ -116,6 +116,8 @@
     background-color: rgba(17, 17, 17, 0.5);
     color: white;
     margin-right: 100px;
+  padding: 100px;
+
 }
 
 .border-primary,
@@ -129,8 +131,7 @@
 .border-white {
     color: rgb(0, 0, 0);
     border: 1px solid black;
-box-sizing: inherit;
-justify-content: flex-start;
+/* box-sizing: inherit; */
 }
 
 .card-text {
@@ -146,5 +147,9 @@ justify-content: flex-start;
 }
 
 #carousel-box {
-    a
+    
+}
+
+.carousel-item {
+
 }
