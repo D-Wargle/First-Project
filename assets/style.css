@@ -64,7 +64,30 @@ text-align: left;
    display: flex;
 }
 
+#carouselExampleCaptionsEasy {
+    
+    width: 70%;
+}
+
+#carouselExampleCaptionsMod {
+    
+    width: 70%;
+}
+
 #carouselExampleCaptions {
     
     width: 70%;
+}
+
+.headerAll {
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    
+}
+
+.pAll {
+    font-size: 1.5em;
+    text-shadow: 3px 3px 3px black;
+    color: white;
 }
