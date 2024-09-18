@@ -136,10 +136,12 @@
 
 .card-text {
     color: white;
+    font-size: 2em;
 }
 
 .card-title-2 {
     color: white;
+    font-size: 3em
 }
 
 .mb-3 {
@@ -152,4 +154,10 @@
 
 .carousel-item {
 
+}
+
+.card-header {
+    background-color: rgba(197, 195, 81, 0.5);
+    color: white;
+    font-size: 2em;
 }
