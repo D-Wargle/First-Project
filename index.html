@@ -89,7 +89,7 @@
             decision on which trail to hike next. We hope you enjoy our site and
             find it helpful in planning your next hike!
           </p>
-          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          <p class="card-text"><small></small></p>
         </div>
       </div>
     </header>
@@ -463,6 +463,52 @@
         </aside>
       </section>
     </main>
+    <footer>
+      <div class="input-group">
+        <span class="input-group-text">First and last name</span>
+        <input type="text" aria-label="First name" class="form-control">
+        <input type="text" aria-label="Last name" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>Choose your trail...</option>
+          <option value="1">Baring Falls</option>
+          <option value="2">St. Mary and Virginia Falls</option>
+          <option value="3">Trail of the Cedars</option>
+          <option value="4">Hidden Lake</option>
+          <option value="5">Gunsight Lake</option>
+          <option value="6">Cracker Lake</option>
+          <option value="7">Pitamakan Pass</option>
+          <option value="8">Ptarmigan Tunnel</option>
+          <option value="9">Swiftcurrent Pass</option>
+        </select>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>Rate your trail...</option>
+          <option value="1">1 (would not hike again)</option>
+          <option value="2">2 (had fun but seen better)</option>
+          <option value="3">3 (did not love it, did not hate it)</option>
+          <option value="4">4 (better than most but not the best)</option>
+          <option value="5">5 (would reccomend to a friend)</option>
+        </select>
+      </div>
+      </div>
+      <br>
+
+      /* This is where the table will be displayed */ 
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Trails Completed</th>
+            <th scope="col">First and Last Name</th>
+            <th scope="col">Trail name</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+      </table>
+    </footer>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
