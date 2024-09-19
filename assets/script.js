@@ -2,7 +2,7 @@
 let userInput = document.querySelector('#userInput');
 
 //create a variable that builds and element and appends it to the '#userInput' id
-const buildElement = function (element. text, className) {
+const buildElement = function (element, text, className) {
     let newElement = document.createElement('elementType');
     element.textContent = text;
     if (className) newElement.className = className;
