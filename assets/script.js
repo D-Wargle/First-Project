@@ -18,8 +18,30 @@ const buildElement = function (element. text, className) {
 
     //create a function that renders the user input if it exists. if they do not exist, call the handleNoPosts function
     const renderUserInput = function () {
-        let userInformation = JSON.parse(localStorage.getItem('blogp'))
+        let userInformation = JSON.parse(localStorage.getItem('userInput'));
+
+        if (!userInformation || userInformation.length === 0) {
+            handleNoPosts();
+            return;
+        }
+        userInformation.forEach(post => {
+            let trEl = buildElement('tr');
+            let trailsCompleted = buildElement('th', post.trailsCompletedEl);
+            let FirstAndLast = buildElement('th', post.FirstAndLastEl);
+            let trailName = buildElement('th', post.trailNameEl);
+            let trailRating = buildElement('th', post.trailRatingEl);
+
+            trEl.appendChild(trailsCompleted);
+            trEl.appendChild(FirstAndLast); 
+            trEl.appendChild(trailName);
+            trEl.appendChild(trailRating);
+            userInput.appendChild(trEl);
+        });
     }
+//call the renderUserInput function
+    renderUserInput();
+
+    //
 
 
 
