@@ -97,13 +97,12 @@
 
 #Aside-El {
     text-align: center;
-    flex-basis: 100%;
-   flex-direction: flex-start;
+   width: 33%;
   
 }
 
 #flex-box-split {
-    gap: 100px;
+    gap: 50px;
     display: flex;
     align-items: flex-start;
     background-color: rgba(197, 195, 81, 0.5);
@@ -115,7 +114,6 @@
     border-radius: 15px;
     background-color: rgba(17, 17, 17, 0.5);
     color: white;
-    margin-right: 100px;
   padding: 100px;
 
 }
@@ -136,7 +134,7 @@
 
 .card-text {
     color: white;
-    font-size: 2em;
+    font-size: 3vw;
 }
 
 .card-title-2 {
@@ -149,7 +147,7 @@
 }
 
 #carousel-box {
-    
+    width: 66%;
 }
 
 .carousel-item {

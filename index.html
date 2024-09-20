@@ -464,10 +464,11 @@
       </section>
     </main>
     <footer>
+      <form id="userInputForm">
       <div class="input-group">
         <span class="input-group-text">First and last name</span>
-        <input type="text" aria-label="First name" class="form-control">
-        <input type="text" aria-label="Last name" class="form-control">
+        <input type="text" aria-label="First name" class="form-control" id="firstName-Box">
+        <input type="text" aria-label="Last name" class="form-control" id="lastName-Box">
       </div>
       <div class="input-group mb-3">
         <label class="input-group-text" for="inputGroupSelect01">Options</label>
@@ -484,8 +485,8 @@
           <option value="9">Swiftcurrent Pass</option>
         </select>
       <div class="input-group mb-3">
-        <label class="input-group-text" for="inputGroupSelect01">Options</label>
-        <select class="form-select" id="inputGroupSelect01">
+        <label class="input-group-text" for="inputGroupSelect02">Options</label>
+        <select class="form-select" id="inputGroupSelect02">
           <option selected>Rate your trail...</option>
           <option value="1">1 (would not hike again)</option>
           <option value="2">2 (had fun but seen better)</option>
@@ -498,35 +499,33 @@
       <br>
 
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button class="btn btn-primary" type="button">Submit</button>
+        <button class="btn btn-primary" type="submit" id="buttonSubmit">Submit</button>
       </div>
-      /* This is where the table will be displayed */ 
-
+    </form>
       <table class="table">
         <thead>
-
-          <tr>
+         <tr>
             <th scope="col">Trails Completed</th>
             <th scope="col">First and Last Name</th>
             <th scope="col">Trail name</th>
             <th scope="col">Rating</th>
           </tr>
-        <div id="userInput"></div>
         </thead>
+        <tbody id="userInput"></tbody>
       </table>
 
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/submit.js"></script>
   </body>
-  <script src="./assets/script.js"></script>
-  <script src="./assets/submit.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"
-  ></script>
 </html>
