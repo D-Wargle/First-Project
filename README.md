@@ -5,10 +5,10 @@ A trail guide for lazy hikers
 This project is an interactive website that allows hikers to explore different trails in Glaicer National Park. With varying difficulties from easy to expert and descriptions of the trails. The website also allows the user to review the trail and mark it completed in a forum section.
 
 ## Visuals
-//add screenshot of website
+![alt text](assets/photos/screenshot.jpg)
 
 ## Application
-//Link to deployed site
+https://d-wargle.github.io/First-Project/
 
 ## Built with
 - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
