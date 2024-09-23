@@ -3,8 +3,8 @@ let userInput = document.querySelector('#userInput');
 
 //create a variable that builds and element and appends it to the '#userInput' id
 const buildElement = function (element, text, className) {
-    let newElement = document.createElement('elementType');
-    element.textContent = text;
+    let newElement = document.createElement(element);
+    newElement.textContent = text;
     if (className) newElement.className = className;
     return newElement;
  }
@@ -18,7 +18,8 @@ const buildElement = function (element, text, className) {
 
     //create a function that renders the user input if it exists. if they do not exist, call the handleNoPosts function
     const renderUserInput = function () {
-        let userInformation = JSON.parse(localStorage.getItem('userInput'));
+        userInput.innerHTML = '';
+        let userInformation = JSON.parse(localStorage.getItem('storedUserInput'));
 
         if (!userInformation || userInformation.length === 0) {
             handleNoPosts();
@@ -26,10 +27,10 @@ const buildElement = function (element, text, className) {
         }
         userInformation.forEach(post => {
             let trEl = buildElement('tr');
-            let trailsCompleted = buildElement('th', post.trailsCompletedEl);
-            let FirstAndLast = buildElement('th', post.FirstAndLastEl);
-            let trailName = buildElement('th', post.trailNameEl);
-            let trailRating = buildElement('th', post.trailRatingEl);
+            let trailsCompleted = buildElement('td', post.value);
+            let FirstAndLast = buildElement('td', post.firstName + ' ' + post.lastName);
+            let trailName = buildElement('td', post.value);
+            let trailRating = buildElement('td', post.value2);
 
             trEl.appendChild(trailsCompleted);
             trEl.appendChild(FirstAndLast); 
@@ -41,7 +42,9 @@ const buildElement = function (element, text, className) {
 //call the renderUserInput function
     renderUserInput();
 
-    //
+
+
+  
 
 
 
