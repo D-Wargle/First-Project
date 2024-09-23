@@ -98,15 +98,21 @@
 #Aside-El {
     text-align: center;
    width: 33%;
+   mix
   
 }
+
+/* #right-end {
+    text-align: center;
+    min-height: 600px
+} */
 
 #flex-box-split {
     gap: 50px;
     display: flex;
     align-items: flex-start;
     background-color: rgba(197, 195, 81, 0.5);
-   
+   min-height: auto;
 }
 
 .card-2 {
@@ -114,8 +120,8 @@
     border-radius: 15px;
     background-color: rgba(17, 17, 17, 0.5);
     color: white;
-  padding: 100px;
-
+  padding: 1px;
+min-height: 350px;
 }
 
 .border-primary,
@@ -132,14 +138,14 @@
 /* box-sizing: inherit; */
 }
 
-.card-text {
+.card-text-main {
     color: white;
-    font-size: 3vw;
+    font-size: 2.3vw;
 }
 
 .card-title-2 {
     color: white;
-    font-size: 3em
+    font-size: 2em
 }
 
 .mb-3 {
@@ -170,4 +176,9 @@
 #submit-Button-cent {
     align-items: center;
     justify-content: center;
+}
+
+.card-text {
+    color: white;
+    font-size: 1.8vw;
 }
