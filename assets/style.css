@@ -159,3 +159,15 @@
     color: white;
     font-size: 2em;
 }
+
+#userInputFooter {
+    background-color: rgba(65, 65, 65, 0.5);
+    color: white;
+    align-items: center;
+    padding: 48px;
+}
+
+#submit-Button-cent {
+    align-items: center;
+    justify-content: center;
+}
